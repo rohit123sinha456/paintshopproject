@@ -1,0 +1,7 @@
+2024-12-07 01:07:15,917 - Camera110 - MainThread - INFO - Begin Probing RTSP Stream for camera :- rtsp://localhost:18554/mystream
+2024-12-07 01:07:19,774 - Camera110 - MainThread - INFO - fps: 25/1
+2024-12-07 01:07:19,787 - Camera110 - MainThread - INFO - fps: 25.0 and height:-720 and width:- 1280
+2024-12-07 01:07:19,787 - Camera110 - MainThread - INFO - running threads
+2024-12-07 01:08:51,005 - Camera110 - MainThread - INFO - Successfully sent to server
+2024-12-07 01:10:39,494 - Camera110 - MainThread - INFO - Successfully sent to server
+2024-12-07 01:12:26,818 - Camera110 - MainThread - INFO - Successfully sent to server
