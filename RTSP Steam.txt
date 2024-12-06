@@ -1,0 +1,15 @@
+Start the media mtx ser using 
+docker run --rm -it -v D:/Rohit/Sudisa/paintshop/dummyRTSP/mediamtx.yml:/mediamtx.yml -p 18554:18554 bluenviron/mediamtx:latest-ffmpeg
+
+The custom/local mediamtx file has 
+1. rtsp port set to 18554. 
+2. read timeout to 60 secs
+2. write timeout to 60 secs 
+
+Always stream in TCP. it works fine
+The run ffmpeg to start the streaming
+ffmpeg -re -stream_loop -1 -i D:/Rohit/Sudisa/paintshop/dummyRTSP/street.mp4 -c copy -f rtsp -rtsp_transport tcp rtsp://localhost:18554/mystream -loglevel verbose
+
+
+then run ffplay to consume the stream
+ffplay -rtsp_transport tcp rtsp://localhost:18554/mystream
